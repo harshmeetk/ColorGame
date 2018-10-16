@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <script src="javascripts/logic.js"></script>
+    <title>Colored Squares</title>
+</head>
+<ul>
+    <li><a class="active" href="#">My Coloring Board</a></li>
+</ul>
+<body>
+<div class="drawingBoard">
+    <div id="colorHeading " class="center">
+        <h1>Color Selector</h1>
+        <p id="colorSelected">Color Selected : None</p>
+        <button onClick="addColor()">Add Color</button>
+        <button onClick="refreshColors()">Refresh Colors</button>
+    </div>
+    <div id="canvasHeading" class="center">
+        <h1 class="canvasHeading">Canvas</h1>
+        <div class="canvasSizeGrid">
+            <div><a href="#" onClick="decCanvasSize()"> <img src="images/negi.png"></a></div>
+            <div><h3 id="canvasSize"></h3></div>
+            <div><a href="#" onClick="addCanvas()"> <img  src="images/plus2.png"></a></div>
+        </div>
+    </div>
+    <div id="box" class="grid-container-colors " >
+    </div>
+    <div id="canvas" class="grid-container-canvas">
+    </div>
+
+</div>
+<!--into Modal-->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <p>Hi, Greetings I am Amardeep Singh. This is my Coloring Board and this is how you use it.</p>
+        <ol>
+            <li>Left and right side here represent the Colors and Canvas respectively and both are self scrollable panes.</li>
+            <li>Select a color by clicking on it and then clicking on the canvas to paint the particular square.</li>
+            <li>Click Add color to add new colors and refresh color to to get new set of Random colors.</li>
+            <li>Use the '+' and '-' buttons to increase and decrease the size of the canvas.</li>
+            <li> Enjoy!! See you soon.</li>
+            <li> Click any where on the screen to get to the Board.</li>
+        </ol>
+    </div>
+
+</div>
+
+</body>
+</html>
